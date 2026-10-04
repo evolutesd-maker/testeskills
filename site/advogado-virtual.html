@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Advogado Virtual | Advocacia Teixeira</title>
+<meta name="description" content="Consulta jurídica on-line com advogado especialista, com segurança e sigilo. Retorno em até 3 horas úteis.">
+<link rel="icon" href="img/logo-stack.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="scroll-bar" aria-hidden="true"><span id="scrollBar"></span></div>
+<header class="site-header" id="header">
+  <a class="brand" href="index.html" aria-label="Advocacia Teixeira, início"><img src="img/logo.png" alt="Advocacia Teixeira" width="150" height="71"></a>
+  <nav class="nav" id="nav" aria-label="Principal">
+    <a href="index.html#atuacao">Atuação</a>
+    <a href="index.html#profissionais">Profissionais</a>
+    <a href="index.html#duvidas">Dúvidas</a>
+    <a href="index.html#contato" class="nav-cta">Contato</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav" aria-label="Abrir menu"><span></span><span></span></button>
+</header>
+<main>
+  <section class="page-top">
+    <div class="wrap">
+      <h1 style="font-size:clamp(2.2rem,5vw,4rem);font-weight:800">Advogado Virtual</h1>
+      <p style="margin-top:18px;font-size:1.15rem">Consulta com um dos nossos advogados especializados, de qualquer lugar, com total segurança e sigilo. O prazo médio de retorno é de até 3 horas úteis.</p>
+    </div>
+  </section>
+  <section class="page-form">
+    <div class="wrap">
+      <form class="form" id="virtualForm" novalidate>
+        <h2 style="font-size:1.7rem">Solicitar consulta on-line</h2>
+        <label>Nome<input name="nome" autocomplete="name" required></label>
+        <label>Telefone ou e-mail<input name="contato" autocomplete="tel" required></label>
+        <fieldset style="border:0;padding:0;margin:0">
+          <legend style="font-weight:600;font-size:.95rem;margin-bottom:8px">Contato preferencial</legend>
+          <div class="radio-row">
+            <label><input type="radio" name="pref" value="Telefone" checked> Telefone</label>
+            <label><input type="radio" name="pref" value="WhatsApp"> WhatsApp</label>
+            <label><input type="radio" name="pref" value="E-mail"> E-mail</label>
+          </div>
+        </fieldset>
+        <label>Sobre o que você quer conversar? (opcional)<textarea name="assunto" rows="3"></textarea></label>
+        <button class="btn btn-copper" type="submit">Solicitar consulta on-line</button>
+      </form>
+      <div class="ok-box" id="okBox" role="status">
+        <h3>Solicitação pronta para enviar</h3>
+        <p>Abrimos o seu app de e-mail com os dados preenchidos. Depois do envio, em até 3 horas úteis você recebe as informações, as instruções de pagamento, a confirmação e o agendamento da consulta.</p>
+        <p style="margin:0">As consultas acontecem por videochamada ou videoconferência.</p>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer"><img src="img/logo.png" alt="Advocacia Teixeira" width="120" height="57"><p>© Advocacia Teixeira. <a href="index.html" style="color:#f0a877">Voltar ao site</a></p></footer>
+<button class="to-top" id="toTop" aria-label="Voltar ao topo"><svg viewBox="0 0 48 48" aria-hidden="true"><circle class="ring-bg" cx="24" cy="24" r="21"/><circle class="ring" id="ring" cx="24" cy="24" r="21"/><path d="M24 31V17m0 0-7 7m7-7 7 7"/></svg></button>
+<script src="main.js"></script>
+</body>
+</html>
